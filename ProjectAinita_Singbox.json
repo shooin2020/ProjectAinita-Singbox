@@ -3,22 +3,18 @@
     {
       "type": "shadowsocks",
       "tag": "Server-1",
-      "server": "135.225.124.80",
+      "server": "20.91.252.21",
       "server_port": 48172,
       "method": "chacha20-ietf-poly1305",
-      "password": "51yloQC8D9w1Wae7FHtI65",
-      "network": "tcp,udp",
-      "tls": {}
+      "password": "51yloQC8D9w1Wae7FHtI65"
     },
     {
       "type": "shadowsocks",
       "tag": "Server-2",
-      "server": "20.91.252.21",
+      "server": "135.225.124.80",
       "server_port": 48172,
       "method": "chacha20-ietf-poly1305",
-      "password": "51yloQC8D9w1Wae7FHtI65",
-      "network": "tcp,udp",
-      "tls": {}
+      "password": "51yloQC8D9w1Wae7FHtI65"
     },
     {
       "type": "shadowsocks",
@@ -26,9 +22,7 @@
       "server": "4.223.100.248",
       "server_port": 48172,
       "method": "chacha20-ietf-poly1305",
-      "password": "51yloQC8D9w1Wae7FHtI65",
-      "network": "tcp,udp",
-      "tls": {}
+      "password": "51yloQC8D9w1Wae7FHtI65"
     },
     {
       "type": "shadowsocks",
@@ -36,9 +30,7 @@
       "server": "4.223.106.151",
       "server_port": 48172,
       "method": "chacha20-ietf-poly1305",
-      "password": "51yloQC8D9w1Wae7FHtI65",
-      "network": "tcp,udp",
-      "tls": {}
+      "password": "51yloQC8D9w1Wae7FHtI65"
     },
     {
       "type": "selector",
