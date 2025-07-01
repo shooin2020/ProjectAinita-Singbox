@@ -127,7 +127,9 @@ def main():
             'server': ip,
             'server_port': config_details['port'],
             'method': config_details['cipher'],
-            'password': config_details['password']
+            'password': config_details['password'],
+            'network': 'tcp,udp',
+            'tls': {}
         })
 
     if not outbounds:
@@ -140,7 +142,9 @@ def main():
                 'server': config['hostname'],
                 'server_port': config['port'],
                 'method': config['cipher'],
-                'password': config['password']
+                'password': config['password'],
+                'network': 'tcp,udp',
+                'tls': {}
             })
 
     # Add selector group
