@@ -147,9 +147,7 @@ def main():
     outbounds.append({
         'type': 'selector',
         'tag': 'Auto',
-        'outbounds': [outbound['tag'] for outbound in outbounds if outbound['type'] == 'shadowsocks'],
-        'url': 'http://www.gstatic.com/generate_204',
-        'interval': '300s'
+        'outbounds': [outbound['tag'] for outbound in outbounds if outbound['type'] == 'shadowsocks']
     })
 
     # Create Sing-box JSON structure
