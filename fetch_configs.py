@@ -143,27 +143,15 @@ def main():
                 'password': config['password']
             })
 
-    # Add selector group
-    outbounds.append({
-        'type': 'selector',
-        'tag': 'Auto',
-        'outbounds': [outbound['tag'] for outbound in outbounds if outbound['type'] == 'shadowsocks']
-    })
-
-    # Create Sing-box JSON structure
+    # Create Sing-box JSON structure without selector
     config_json = {
-        'outbounds': outbounds,
-        'route': {
-            'rules': [
-                {'outbound': 'Auto'}
-            ]
-        }
+        'outbounds': outbounds
     }
 
     try:
         with open('ProjectAinita_Singbox.json', 'w', encoding='utf-8') as f:
             json.dump(config_json, f, indent=2, ensure_ascii=False)
-        logger.info(f"Successfully wrote {len(outbounds)-1} configs to ProjectAinita_Singbox.json")
+        logger.info(f"Successfully wrote {len(outbounds)} configs to ProjectAinita_Singbox.json")
     except Exception as e:
         logger.error(f"Error writing to ProjectAinita_Singbox.json: {str(e)}")
         exit(1)
